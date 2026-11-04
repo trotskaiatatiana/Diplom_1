@@ -5,9 +5,12 @@ from praktikum.burger import Burger
 
 class TestBurger:
 
-    def test_init(self):
+    def test_init_bun_is_none(self):
         burger = Burger()
         assert burger.bun is None
+
+    def test_init_ingredients_is_empty(self):
+        burger = Burger()
         assert burger.ingredients == []
 
     def test_set_buns(self, burger, bun):
